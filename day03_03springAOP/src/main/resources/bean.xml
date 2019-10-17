@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 配置spring的IOC，配置service对象 -->
+    <bean id="accountService" class="com.service.impl.AccountService"></bean>
+    <!-- spring基于XML的AOP配置步骤
+        1. 把通知的bean也交付给spring管理；
+        2. 使用aopconfigure标签表明开始AOP的配置
+        3. 使用aop:aspect标签表明配置切面
+            id：给定一个唯一标识
+            ref：指定通知类bean的id
+        4. 在aop:aspect标签的内部使用对应的标签配置通知的类型
+            此次实例是让printLogger方法在切入点方法执行之前通知，所以是前置通知
+            aop:before表示配合前置通知
+            method：用于指定通知时调用的方法
+            pointcut：用于指定切入点表达式，该表达式的含义指的是对业务层哪些方法增强
+            切入点表达式的写法：
+                关键字：execution（表达式）
+                表达式：
+                    访问修饰符 返回值 包.包...类名.方法名（参数列表）
+                标准的表达式写法：
+                    public void com.service.impl.AccountServiceImpl.saveAccount()
+                其中访问修饰符可以省略
+                返回值可以使用通配符表示任意返回值
+                包名也可以使用通配符表示任意包，但是有几级的包就需要写几个*
+                类名和方法名都可以使用*来实现通配
+                包名还可以再有..表示当前包及其子包
+                参数列表：
+                    可以直接写数据类型：
+                        基本类型直接写名称 int
+                        应用类型写包名.类型名 lang.Integer
+                    类型也可以用*代替，但是要求方法必须有参数
+                    可以使用..表示有无参数都可以
+                全通配写法：
+                    * *..*.*(..)
+                实际开发中的通常写法：
+                    切到业务层实现类下的所有方法
+                        * com.service.impl.*.*(..)
+    -->
+    <!-- 配置Logger -->
+    <bean id="logger" class="com.utils.Logger"></bean>
+    <!-- 配置AOP -->
+    <aop:config>
+        <!-- 配置切面 -->
+        <aop:aspect id="logAdvice" ref="logger">
+            <!-- 配置通知的类型且建立配置方法和切入点方法的关联 -->
+            <aop:before method="printLog" pointcut="execution(* com.service.impl.*.*(..))"></aop:before>
+        </aop:aspect>
+    </aop:config>
+</beans>

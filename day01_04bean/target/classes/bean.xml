@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 把对象的创建交给spring管理 -->
+    <!-- Spring对bean的管理细节 -->
+    <!-- 创建bean的三种方式 -->
+    <!-- 第一种方式，使用默认构造函数创建
+            在Spring配置文件中使用bean标签，配置id和class标签，同时没有其他属性和标签
+            采用的是默认构造函数，如果没有默认构造函数则无法创建
+     -->
+    <!--
+    <bean id="accountService" class="com.service.impl.AccountServiceImpl"></bean>
+    -->
+    <!-- 第二种方式，使用普通工厂中的方法创建对象（使用某个类中的方法创建对象，并存入容器）-->
+    <!--
+    <bean id="instanceFactory" class="com.factory.InstanceFactory"></bean>
+    <bean id="accountService" factory-bean="instanceFactory" factory-method="getAccountService"></bean>
+    -->
+    <!-- 第三种方式，使用工厂中的静态方法创建对象（使用某个类中的静态方法创建对象，并存入Spring容器）-->
+    <!--<bean id="staticFactory" class="com.factory.StaticFactory" factory-method="getAccountService"></bean>-->
+    <!-- bean对象的作用范围 -->
+    <!--
+        scope属性可以指定bean的作用范围
+        singletom：单例的（默认）
+        prototype：多利的
+        request：作用于Web应用的请求范围
+        session：作用于Web应用的会话范围
+        global-session：作用于集群环境的会话范围（全局），不是集群环境是，便是session
+    -->
+    <!--<bean scope="prototype" id="accountService" class="com.service.impl.AccountServiceImpl"></bean>-->
+    <!-- bean对象的生命周期
+            单例对象
+                创建：当容器创建时，对象被创建；
+                活动：容器活动，单例在活动；
+                销毁：容器销毁，单例被销毁；
+            单例对象的生命周期就是容器的生命周期
+            多利对象
+                创建
+                活动
+                销毁
+    -->
+    <bean scope="singleton" id="accountService" class="com.service.impl.AccountServiceImpl" init-method="init" destroy-method="destroy"></bean>
+</beans>

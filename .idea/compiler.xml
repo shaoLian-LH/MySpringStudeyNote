@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day04_05tx_xml" />
+        <module name="day02_02accountXMLIOC" />
+        <module name="day04_06tx_anno" />
+        <module name="day04_07anno_tx_withoutXML" />
+        <module name="day03_04advicetype" />
+        <module name="day03_05annotationAOP" />
+        <module name="day02_04account_annoIOCWithoutXML" />
+        <module name="day02_03account_annoioc" />
+        <module name="day03_02proxy" />
+        <module name="day01_04bean" />
+        <module name="day03_01account" />
+        <module name="day04_04tx" />
+        <module name="day01_05DI" />
+        <module name="day04_03accountAopTx_anno" />
+        <module name="day04_01JDBCTemplate" />
+        <module name="day01_03spring" />
+        <module name="day03_03springAOP" />
+        <module name="day04_02accountAopTx_xml" />
+        <module name="day02_01anno" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day01_02Factory" target="1.5" />
+      <module name="day01_03spring" target="1.8" />
+      <module name="day01_04bean" target="1.8" />
+      <module name="day01_05DI" target="1.8" />
+      <module name="day02_01anno" target="1.8" />
+      <module name="day02_02accountXMLIOC" target="1.8" />
+      <module name="day02_03account_annoioc" target="1.8" />
+      <module name="day02_04account_annoIOCWithoutXML" target="1.8" />
+      <module name="day03_01account" target="1.8" />
+      <module name="day03_02proxy" target="1.8" />
+      <module name="day03_03springAOP" target="1.8" />
+      <module name="day03_04advicetype" target="1.8" />
+      <module name="day03_05annotationAOP" target="1.8" />
+      <module name="day04_01JDBCTemplate" target="1.8" />
+      <module name="day04_02accountAopTx_xml" target="1.8" />
+      <module name="day04_03accountAopTx_anno" target="1.8" />
+      <module name="day04_04tx" target="1.8" />
+      <module name="day04_05tx_xml" target="1.8" />
+      <module name="day04_06tx_anno" target="1.8" />
+      <module name="day04_07anno_tx_withoutXML" target="1.8" />
+      <module name="day04_08account_tx" target="1.8" />
+      <module name="FirstTest" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

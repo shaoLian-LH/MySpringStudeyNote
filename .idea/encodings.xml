@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/day01_03spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day01_04bean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day01_05DI" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day02_01anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day02_02accountXMLIOC" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day02_03account_annoioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day02_04account_annoIOCWithoutXML" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03_01account" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03_02proxy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03_03springAOP" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03_04advicetype" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03_05annotationAOP" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_01JDBCTemplate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_02accountAopTx_xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_03accountAopTx_anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_04tx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_05tx_xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_06tx_anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_07anno_tx_withoutXML" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04_08account_tx" charset="UTF-8" />
+  </component>
+</project>

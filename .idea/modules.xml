@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllSpringTest.iml" filepath="$PROJECT_DIR$/AllSpringTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01_03spring/day01_03spring.iml" filepath="$PROJECT_DIR$/day01_03spring/day01_03spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01_04bean/day01_04bean.iml" filepath="$PROJECT_DIR$/day01_04bean/day01_04bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01_05DI/day01_05DI.iml" filepath="$PROJECT_DIR$/day01_05DI/day01_05DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_01anno/day02_01anno.iml" filepath="$PROJECT_DIR$/day02_01anno/day02_01anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_02accountXMLIOC/day02_02accountXMLIOC.iml" filepath="$PROJECT_DIR$/day02_02accountXMLIOC/day02_02accountXMLIOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_03account_annoioc/day02_03account_annoioc.iml" filepath="$PROJECT_DIR$/day02_03account_annoioc/day02_03account_annoioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_04account_annoIOCWithoutXML/day02_04account_annoIOCWithoutXML.iml" filepath="$PROJECT_DIR$/day02_04account_annoIOCWithoutXML/day02_04account_annoIOCWithoutXML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_01account/day03_01account.iml" filepath="$PROJECT_DIR$/day03_01account/day03_01account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_02proxy/day03_02proxy.iml" filepath="$PROJECT_DIR$/day03_02proxy/day03_02proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_03springAOP/day03_03springAOP.iml" filepath="$PROJECT_DIR$/day03_03springAOP/day03_03springAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_04advicetype/day03_04advicetype.iml" filepath="$PROJECT_DIR$/day03_04advicetype/day03_04advicetype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_05annotationAOP/day03_05annotationAOP.iml" filepath="$PROJECT_DIR$/day03_05annotationAOP/day03_05annotationAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_01JDBCTemplate/day04_01JDBCTemplate.iml" filepath="$PROJECT_DIR$/day04_01JDBCTemplate/day04_01JDBCTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_02accountAopTx_xml/day04_02accountAopTx_xml.iml" filepath="$PROJECT_DIR$/day04_02accountAopTx_xml/day04_02accountAopTx_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_03accountAopTx_anno/day04_03accountAopTx_anno.iml" filepath="$PROJECT_DIR$/day04_03accountAopTx_anno/day04_03accountAopTx_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_04tx/day04_04tx.iml" filepath="$PROJECT_DIR$/day04_04tx/day04_04tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_05tx_xml/day04_05tx_xml.iml" filepath="$PROJECT_DIR$/day04_05tx_xml/day04_05tx_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_06tx_anno/day04_06tx_anno.iml" filepath="$PROJECT_DIR$/day04_06tx_anno/day04_06tx_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_07anno_tx_withoutXML/day04_07anno_tx_withoutXML.iml" filepath="$PROJECT_DIR$/day04_07anno_tx_withoutXML/day04_07anno_tx_withoutXML.iml" />
+    </modules>
+  </component>
+</project>

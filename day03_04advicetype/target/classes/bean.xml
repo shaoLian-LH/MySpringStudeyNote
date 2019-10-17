@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 配置spring的IOC，配置service对象 -->
+    <bean id="accountService" class="com.service.impl.AccountService"></bean>
+
+    <!-- 配置Logger -->
+    <bean id="logger" class="com.utils.Logger"></bean>
+    <!-- 配置AOP -->
+    <aop:config>
+        <!-- 配置切入点表达式 id用于指定表达式的唯一标识 expression用于指定表达式内容
+                 此标签如果写在一个aop:aspect标签内部那么只能在这个标签页内使用
+                 它还可以写在aop:aspect的外面，此时就是其他切面都可以使用
+            -->
+        <aop:pointcut id="servicePointcut" expression="execution(* com.service.impl.*.*(..))"/>
+        <!-- 配置切面 -->
+        <aop:aspect id="logAdvice" ref="logger">
+            <!-- 配置通知的类型且建立配置方法和切入点方法的关联 -->
+       <!--     &lt;!&ndash; 前置通知，在切入点方法执行之前执行 &ndash;&gt;
+            <aop:before method="beforePrintLog" pointcut-ref="servicePointcut"></aop:before>
+            &lt;!&ndash; 后置通知，在切入点方法正常执行之后执行&ndash;&gt;
+            <aop:after-returning method="afterReturningPrintLog" pointcut-ref="servicePointcut"></aop:after-returning>
+            &lt;!&ndash; 异常通知，在切入点方法异常发生时执行&ndash;&gt;
+            <aop:after-throwing method="afterThrowingPrintLog" pointcut-ref="servicePointcut"></aop:after-throwing>
+            &lt;!&ndash; 最终通知，在切入点方法执行之后执行&ndash;&gt;
+            <aop:after method="afterPrintLog" pointcut-ref="servicePointcut"></aop:after>-->
+            <!-- 配置环绕通知 -->
+            <aop:around method="aroundPrintLog" pointcut-ref="servicePointcut"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>

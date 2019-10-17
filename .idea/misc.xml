@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/FirstTest/pom.xml" />
+        <option value="$PROJECT_DIR$/day01_02Factory/pom.xml" />
+        <option value="$PROJECT_DIR$/day01_03spring/pom.xml" />
+        <option value="$PROJECT_DIR$/day01_04bean/pom.xml" />
+        <option value="$PROJECT_DIR$/day01_05DI/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_01anno/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_02accountXMLIOC/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_03account_annoioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_04account_annoIOCWithoutXML/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_01account/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_02proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_03springAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_04advicetype/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_05annotationAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_01JDBCTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_02accountAopTx_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_03accountAopTx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_04tx/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_05tx_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_06tx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_07anno_tx_withoutXML/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_08account_tx/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
